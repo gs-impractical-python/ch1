@@ -15,6 +15,7 @@ class PigLatin:
   @words_split.setter
   def words_split(self, words):
     self._words_split = self._split(words)
+    self._translated = self._translate(self._words_split)
 
   def _split(self, words):
     return words.split()
